@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fwaas-ovn-l2"
+version = "0.2.0"
+description = "neutron-fwaas v2 OVN driver for VM ports (neutron-fwaas 2025.2)"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+# No runtime dependencies on purpose: neutron, neutron-lib and neutron-fwaas
+# come from the kolla neutron-base image. Declaring them would let pip try to
+# upgrade them during the image build.
+dependencies = []
+
+[tool.setuptools]
+packages = ["fwaas_ovn_l2"]
