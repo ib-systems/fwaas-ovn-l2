@@ -22,7 +22,7 @@ neutron-fwaas v2 driver for **VM ports** on ML2/OVN, for neutron-fwaas
 ```ini
 [neutron-base-plugin-fwaas-ovn-l2]
 type = git
-location = https://<your-git>/infra/fwaas-ovn-l2.git
+location = https://github.com/ib-systems/fwaas-ovn-l2.git
 reference = 0.2.0
 ```
 
